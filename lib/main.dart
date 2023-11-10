@@ -61,7 +61,7 @@ class TestButton extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8),
         width: double.infinity,
         child: InkWell( // UI적으로 InkWell , 다양한입력 Gesture
-          onTap: () => print('Tab!'),
+          onTap: () => callback.call(),
           child: Center(
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 4),
